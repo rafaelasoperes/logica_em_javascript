@@ -1,0 +1,28 @@
+<canvas width="600" height="400"> </canvas>
+
+<script> 
+
+    var tela = document.querySelector("canvas");
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle = "lightgrey"
+    pincel.fillRect(0,0,600,400)
+    
+    pincel.fillStyle = "#b20710";
+    pincel.fillRect(200,130,60, 200);
+
+    pincel.fillStyle = "b20710";
+    pincel.fillRect(320,130,60,200);
+
+    //criando um triângulo
+    pincel.fillStyle = "#e50914";
+    pincel.beginPath();
+    pincel.moveTo(200, 130);
+    pincel.lineTo(260, 130);
+    pincel.lineTo(381, 330);
+    pincel.lineTo(321, 330);
+    //pincel.lineTo();
+    pincel.fill();
+
+
+</script>
